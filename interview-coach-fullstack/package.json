@@ -1,0 +1,23 @@
+{
+  "name": "interview-coach",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n API,WEB \"npm run dev -w server\" \"npm run dev -w client\"",
+    "build": "npm run build -w client",
+    "start": "npm run start -w server",
+    "test": "npm run test -w server",
+    "local": "npm run build && npm start",
+    "check:gemini": "node server/src/check-gemini.js"
+  },
+  "devDependencies": {
+    "concurrently": "9.2.0"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}

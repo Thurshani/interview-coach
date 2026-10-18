@@ -1,0 +1,22 @@
+{
+  "name": "interview-coach-server",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "cors": "2.8.5",
+    "dotenv": "16.6.1",
+    "express": "5.1.0",
+    "express-rate-limit": "7.5.1",
+    "helmet": "8.1.0",
+    "multer": "2.4.0",
+    "pdf-parse": "2.4.5",
+    "word-extractor": "1.0.4",
+    "zod": "3.25.76"
+  }
+}
